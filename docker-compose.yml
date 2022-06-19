@@ -1,0 +1,40 @@
+version: "2"
+
+services:
+
+    postgres:
+        image: postgres
+        container_name: postgres_klan
+        environment:
+          - POSTGRES_DB=klan
+          - POSTGRES_USER=klanadmin
+          - POSTGRES_PASSWORD=Kl@nadm!n
+          - TZ=GMT+3
+        volumes:
+          - "./docker_config/pgdata:/var/lib/postgresql/pgdata"
+        ports:
+          - 5433:5432
+        networks:
+          - klan-compose-network
+
+      
+    php-apache:
+        container_name: php-apache_klan
+        build:
+          context: "./docker_config/apache"
+        #restart: unless-stopped
+        ports:
+            - '8083:80'
+        volumes:
+          - ".:/var/www/klan"
+          - "./docker_config/apache/default.conf:/etc/apache2/sites-enabled/000-default.conf"
+        depends_on:
+          - postgres
+        networks:
+          - klan-compose-network
+          
+          
+networks:
+  klan-compose-network:
+    driver: bridge
+    

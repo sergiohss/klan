@@ -1,0 +1,4 @@
+CREATE USER klanadmin;
+
+CREATE DATABASE klan;
+GRANT ALL PRIVILEGES ON DATABASE klan TO klanadmin;
