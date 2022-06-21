@@ -3,8 +3,9 @@ version: "2"
 services:
 
     postgres:
-        image: postgres
         container_name: postgres_klan
+        build:
+          context: "./docker_config/postgres"
         environment:
           - POSTGRES_DB=klan
           - POSTGRES_USER=klanadmin

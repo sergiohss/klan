@@ -14,6 +14,8 @@ RUN apt update \
             pdo \
             pdo_pgsql \
             pgsql 
+		
+RUN a2enmod rewrite
 
 WORKDIR /var/www/klan
 
