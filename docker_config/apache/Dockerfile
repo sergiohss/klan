@@ -14,6 +14,9 @@ RUN apt update \
             pdo \
             pdo_pgsql \
             pgsql 
+			
+RUN apt install -y nodejs \
+    && apt install npm -y 
 		
 RUN a2enmod rewrite
 

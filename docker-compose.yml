@@ -6,6 +6,7 @@ services:
         container_name: postgres_klan
         build:
           context: "./docker_config/postgres"
+        restart: unless-stopped
         environment:
           - POSTGRES_DB=klan
           - POSTGRES_USER=klanadmin
@@ -23,13 +24,15 @@ services:
         container_name: php-apache_klan
         build:
           context: "./docker_config/apache"
-        #restart: unless-stopped
+        restart: unless-stopped
         ports:
             - '8083:80'
         volumes:
           - ".:/var/www/klan"
           - "./docker_config/apache/default.conf:/etc/apache2/sites-enabled/000-default.conf"
         depends_on:
+          - postgres
+        links:
           - postgres
         networks:
           - klan-compose-network

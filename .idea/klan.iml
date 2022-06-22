@@ -117,6 +117,8 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/facade/ignition-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phar-io/version" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/laravel/breeze" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/lucascudo/laravel-pt-br-localization" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
