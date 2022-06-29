@@ -112,7 +112,7 @@
             </header>
             <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
             <ul class="actions">
-                <li><a href="#" class="button">Learn More</a></li>
+                <li><a href="#" class="button">Voltar ao Topo</a></li>
             </ul>
         </div>
         <a href="#three" class="goto-next scrolly">Next</a>
@@ -128,7 +128,7 @@
             </header>
             <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
             <ul class="actions">
-                <li><a href="#" class="button">Learn More</a></li>
+                <li><a href="#" class="button">Voltar ao Topo</a></li>
             </ul>
         </div>
         <a href="#four" class="goto-next scrolly">Next</a>
@@ -177,7 +177,7 @@
             </div>
             <footer class="major">
                 <ul class="actions special">
-                    <li><a href="#" class="button">Magna sed feugiat</a></li>
+                    <li><a href="#" class="button">Voltar ao Topo</a></li>
                 </ul>
             </footer>
         </div>

@@ -8,6 +8,7 @@
 <script src="{!! asset('plugins/validation/jquery.validate.min.js') !!}"></script>
 <script src="{!! asset('plugins/validation/jquery.validate-init.js') !!}"></script>
 <script src="{!! asset('plugins/validation/jquery.validate-pt-br.js') !!}"></script>
+<script src="https://kit.fontawesome.com/5ae70752eb.js" crossorigin="anonymous"></script>
 
 <!-- Chartjs -->
 <script src="{!! asset('plugins/chart.js/Chart.bundle.min.js') !!}"></script>
